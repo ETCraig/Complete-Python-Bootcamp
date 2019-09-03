@@ -1,12 +1,12 @@
 # Mod Operator
 7%4 
 
-#Powers
+#POWERS
 2 ** 8
 
 (2 + 10) * (10+3)
 
-#Var
+#VARIABLES
 a = 10
 
 a = a + a
@@ -19,7 +19,7 @@ tax_rate = 0.1
 
 my_taxes = my_income * tax_rate
 
-#Strings
+#STRINGS
 print('Hello World One.')
 print('Hello World Two.')
 
@@ -28,16 +28,16 @@ print('Hello \nworld')
 #Tab Sequence
 print('Hello \tworld')
 
-#Length
+#LENGTH
 len("I am a String")
 
-#Indexing
+#INDEXING
 myString = "Hello World"
 myString[0]
 myString[8]
 myString[-2]
 
-#Slicing
+#SLICING
 myString = 'abcdefghijkl'
 
 myString[2:] 
@@ -51,7 +51,7 @@ name = 'Ethan'
 
 last_letters = name[2:]
 
-#Concatanations
+#CONCATANATIONS
 "Nat" + last_letters
 
 letter = 'z'
@@ -60,7 +60,7 @@ letter * 10
 
 "3" + "2"
 
-#Methods 
+#METHODS 
 x = "Hello World"
 
 x.upper()
@@ -84,7 +84,7 @@ name = "Jose"
 
 print(f'Hello, his name is {name}')
 
-#Lists
+#LISTS
 myList = ['one', 'two', 'three']
 
 myList[0]
@@ -97,7 +97,7 @@ num_list = [4, 2, 1, 3]
 
 num_list.sort()
 
-#Dictionaries
+#DICTIONARIES
 
 my_dict = {"key1":'value1', 'key2':'value2'}
 
@@ -119,7 +119,7 @@ d.values()
 
 d.items()
 
-#Tuples
+#TUPLES
 t = (1,2,3)
 
 type(t)
@@ -128,7 +128,96 @@ len(t)
 
 t.index(2)
 
-#Booleans
+#BOOLEANS
 type(False)
 
 1 > 2
+
+#COMPARISONS 
+2 == 2
+#True
+2 == 1
+#False
+'helo' == 'bye'
+#False
+2.0 == 2
+#True
+4 != 2
+#True
+#< <= > >=
+
+1 < 2 and 2 > 3
+#False
+'h' == 'h' and 2 == 2
+#True
+
+1 == 1 or 2 == 3
+#True
+
+#If, Elif, and Else Statements
+if 3 > 2:
+    print('ITS TRUE')
+else:
+    print('ITS FALSE')
+
+#FOR LOOPS
+myReadyList = [1,2,3,4,5,6,7,8,9,10]
+
+for item in myReadyList:
+    print(item)
+
+for num in myReadyList:
+    if num % 2 == 0:
+        print(num)
+    else:
+        print(f'Odd Number: {num}')
+
+list_sum = 0
+
+for num in myReadyList:
+    list_sum = list_sum = num
+
+    print(list_sum)
+
+myTupleList = [(1,3,5),(2,4,6),(3,5,8)] 
+
+for a,b,c in myTupleList:
+    print(b)
+
+#WHILE LOOPS
+x = 0
+
+while x < 5:
+    print(f'The current value is {x}')
+    x = x + 1
+
+y = 0
+
+while x < 5:
+    if x == 2:
+        break
+    print(x)
+    x += 1
+
+#OPERATORS 
+opList = [1,2,3]
+
+for num in range(0,10,2):
+    print(num)
+
+list(range(0,10,2))
+
+opLetters = ['a','b','c']
+
+for item in zip(opList, opLetters):
+    print(item)
+
+list(zip(opList,opLetters))
+
+'a' in opList
+'a' in opLetters
+
+min(opList)
+max(opList)
+
+input('Enter a Number Here: ')0-+
