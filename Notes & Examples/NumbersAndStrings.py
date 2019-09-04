@@ -83,3 +83,52 @@ print('The Result Was {r:1.3f}'.format(r=result))
 name = "Jose"
 
 print(f'Hello, his name is {name}')
+
+#Lists
+myList = ['one', 'two', 'three']
+
+myList[0]
+myList[1:]
+
+myList.append('four')
+myList.pop()
+
+num_list = [4, 2, 1, 3]
+
+num_list.sort()
+
+#Dictionaries
+
+my_dict = {"key1":'value1', 'key2':'value2'}
+
+my_dict['key1']
+
+d = {'k1': 123,'k2':[1,2,13],'k3':{'insideKey':100}}
+
+d['k2']
+
+d['k3']['insideKey']
+
+d['k4'] = 300
+
+d['k1'] = 'New Value'
+
+d.keys()
+
+d.values()
+
+d.items()
+
+#Tuples
+t = (1,2,3)
+
+type(t)
+
+len(t)
+
+t.index(2)
+
+#Booleans
+type(False)
+
+1 > 2
