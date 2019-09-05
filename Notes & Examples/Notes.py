@@ -220,4 +220,40 @@ list(zip(opList,opLetters))
 min(opList)
 max(opList)
 
-input('Enter a Number Here: ')0-+
+# input('Enter a Number Here: ')0-+
+
+#METHODS && FUNCTIONS
+def name_function():
+    print('Hello')
+
+name_function()
+
+def say_hello(name='NAME'):
+    return 'hello '+name
+
+result = say_hello('Jose')
+
+result
+
+def add(a,b): 
+    return a+b
+
+addition = add(2, 4)
+
+addition
+
+def dog_check(mystring):
+    return 'dog' in mystring.lower()
+
+dog_check('My Dog ran away')
+
+def pig_latin(word):
+    first_letter = word[0]
+    if first_letter in 'aeiou':
+        pig_word = word + 'ay'
+    else:
+        pig_word = word[1:] + first_letter + 'ay'
+    
+    return pig_word
+
+pig_latin('apple')
