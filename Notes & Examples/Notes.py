@@ -257,3 +257,51 @@ def pig_latin(word):
     return pig_word
 
 pig_latin('apple')
+
+#ARGS && KWARGS
+def myFunc(*args):
+    print(args)
+
+myFunc(40,60,70,80)
+
+def fruitFunc(**kwargs):
+    if 'fruit' in kwargs:
+        print('My fruit of choice is {}'.format(kwargs['kwargs']))
+    else:
+        print('I did not fins any fruit.')
+
+fruitFunc(fruit='apple', veggie='lettuce')
+
+def thisFunc(*args,**kwargs):
+    print('I would like {} {}'.format(args[0],kwargs['food']))
+
+thisFunc(10,20,30,fruit='orange',food='eggs',animal='dog')
+
+#FUNCTION PRACTICE EXERCISES 1
+def lesser_of_two_evens(a,b):
+    if a % 2 == 0 and b % 2 == 0:
+        return min(a,b)
+    else:
+        return max(a,b)
+
+def animal_crackers(text):
+    wordList = text.split()
+
+    return wordList[0][0] == wordList[1][0]
+
+def makes_twenty(n1,n2):
+    return n1 + n2 == 20 or n1 == 20 or n2 ==20
+
+def old_mcdonald(name):
+    firstHalf = name[:3]
+    secondHalf = name[3:]
+
+    return firstHalf.capitalize() + secondHalf.capitalize()
+
+def master_yoda(text):
+    wordList = text.split()
+    reverse = wordList[::-1]
+    return ' '.join(reverse)
+
+def almost_there(num):
+    return (abs(100 - num) <= 10) or (abs(200 - num) <= 10)
