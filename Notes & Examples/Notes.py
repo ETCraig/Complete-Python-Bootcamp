@@ -305,3 +305,72 @@ def master_yoda(text):
 
 def almost_there(num):
     return (abs(100 - num) <= 10) or (abs(200 - num) <= 10)
+
+#FUNCTION PRACTICE EXERCISES 2
+def has_33(nums):
+    for i in range(0,len(nums)-1):
+        if nums[i] == 3 and nums[i+1] == 3:
+            return True
+
+    return False
+
+def paper_doll(text):
+    result = ''
+
+    for char in text:
+        result += char*3
+    return result
+
+def black_jack(a,b,c):
+    if sum([a,b,c]) <= 21:
+        return sum([a,b,c])
+    elif 11 in ([a,b,c]) and sum([a,b,c]) <= 31:
+        return sum([a,b,c]) - 10
+    else:
+        return 'BUST'
+
+def summer_69(arr):
+    total = 0
+    add = True
+
+    for num in arr:
+        while add:
+            if num != 6:
+                total += num
+                break
+            else:
+                add = False
+        while not add:
+            if num != 9:
+                break
+            else:
+                add = True
+                break
+    return total
+
+def spy_game(nums):
+    code = [0,0,7,'x']
+
+    for num in nums:
+        if num == code[0]:
+            code.pop(0)
+
+    return len(code) == 1
+
+def count_primes(num):
+    if num < 2:
+        return 0
+    
+    primes = [2]
+    x = 3
+
+    while x <= num:
+        for y in primes:
+            if x % y == 0:
+                x += 2
+                break
+        else:
+            primes.append(x)
+            x += 2
+    print(primes)
+    return len(primes)
